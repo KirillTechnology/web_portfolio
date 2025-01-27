@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Projects</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <div class="navbar">
+
+                <div class="logo">
+                    <a href="./index.html">
+                        Kirill Semenov
+                    </a>
+                </div>
+
+                <nav class="top">
+                    <a href="./projects.html">Projects</a>
+                    <a href="./articles.html">Articles</a>
+                    <a href="./cheats.html">Cheats</a>
+                    <a href="./contacts.html">Contacts</a>
+                </nav>
+
+                <button class="btn-menu">
+                    <span>
+                        <hr id="hr1">
+                        <hr id="hr2">
+                        <hr id="hr3">
+                    </span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sheet">
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/user_check/AWS_demo_poster.png">
+                <source src="./projects/user_check/AWS_demo.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>App protection with AWS</h2>
+
+                <p>Express.js app written as AWS (Amazon Web Services) Lambda function that gives access to your
+                    app only to authorized users. All user logs (POST requests) are saved in PostgreSQL database
+                    (Amazon RDS). Users can be manually blocked. Lambda is triggered with AWS API Gateway. Plus,
+                    additional offline protection.</p>
+
+                <p>AWS Lambda sends email with statistics every week using nodemailer library. Email service is
+                    protected with google OAuth2. Lambda is triggered with a Rule (Cron expression) in EventBridge
+                    (CloudWatch Event). Default 3s Lambda timeout is increased in case of long requests. Sensitive 
+                    info (keys) stored as Lambda environment variables.</p>
+
+                <p><b>Update coming soon ...</b></p>
+
+            </div>
+
+        </div>
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/tech_store/tech_store_poster.jpeg">
+                <source src="./video/AWS.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>Online store</h2>
+
+                <p>React online store. Navigation is implemented with ReactRouter. Authentication,
+                    registration, database are processed with Firebase cloud service. User info, products
+                    and shopping cart are managed with Redux, Reselect and stored with Redux-Persist. Components are
+                    styled with SASS and Styled-components library. Notification component is managed with React
+                    Context. Deployed on Netlify.</p>
+
+                <p><b>React &ensp; JSX &ensp; Firebase &ensp; SASS &ensp; StyledComponents &ensp; ReactRouter &ensp;
+                        Redux &ensp; Reselect &ensp; Redux-Toolkit &ensp; Redux-Persist &ensp; Redux-Thunk &ensp;
+                        Redux-Saga &ensp; Netlify</b></p>
+
+                <p>
+                    <a href="./projects_js_online_store.html">Learn more</a>
+                    /
+                    <a href="https://joyful-kulfi-39f626.netlify.app">Live demo</a>
+                    /
+                    <a
+                        href="https://github.com/KirillTechnology/tech_store/tree/deploy5_Redux_Reselect_Persist">GitHub</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/smartbrain/demo_poster.png">
+                <source src="./projects/smartbrain/smartbrain_demo_c.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>Smartbrain</h2>
+
+                <p>This SmartBrain app detects faces in your uploaded images. Each face gives you 1 point. It is
+                    connected to a server, which analyzes images with the help of Clarifai API and securely saves
+                    your score and login info in a database.</p>
+
+                <p> <b>Node.js &ensp; React &ensp; PostreSQL &ensp; JSX</b> </p>
+
+                <p>
+                    <a href="https://github.com/KirillTechnology/smartbrain.git">GitHub (Front)</a>
+                    /
+                    <a href="https://github.com/KirillTechnology/smartbrain_api.git">GitHub (Back)</a>
+                </p>
+
+                <p>
+                    <a href="https://smartbrain-sasl.onrender.com/">Live demo</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/carousel/carousel_poster.png"
+                style="object-position: 50% 70%;">
+                <source src="./projects/carousel/carousel_demo_c.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>Carousel</h2>
+
+                <p>Slideshow made with Javascript, CSS and HTML. Autoplay is set to 3s.
+                    When the slide is hovered, autoplay stops. When a cursor leaves the
+                    carousel, the autoplay continues. Buttons are processed with a 'throttle'
+                    function to allow the animation to stop before you can move to the next slide.</p>
+
+                <p> <b>JS &ensp; HTML &ensp; CSS</b> </p>
+
+                <p>
+                    <a href="./projects/carousel/index.html">Live demo</a>
+                    /
+                    <a href="https://github.com/KirillTechnology/carousel">GitHub</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/shopping_list/demo_poster.png">
+                <source src="./projects/shopping_list/shopping_list_demo_c.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>Shopping list</h2>
+
+                <p>This web shopping list can help you to be productive. You can add new items and delete wrong entries.
+                    Also you can cross the items that you have already bought by clicking on them.</p>
+
+                <p> <b>JS &ensp; HTML &ensp; CSS</b> </p>
+
+                <p>
+                    <a href="./projects/shopping_list/index.html">Live demo</a>
+                    /
+                    <a href="https://github.com/KirillTechnology/shopping_list">GitHub</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/robo_friends/demo_poster.png"
+                style="object-position: top;">
+                <source src="./projects/robo_friends/robo_friends_demo_c.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>Robo friends</h2>
+
+                <p>This is a React app where you have a grid of cards with your robo-friends.
+                    You can find your friend with a search input at the top of the app. When
+                    you click on a robot, its card flips and changes color.</p>
+
+                <p> <b>React &ensp; JS &ensp; HTML &ensp; CSS</b> </p>
+
+                <p>
+                    <a href="https://kirilltechnology.github.io/robo_friends/">Live demo</a>
+                    /
+                    <a href="https://github.com/KirillTechnology/robo_friends">GitHub</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/infinite_scroll/infinite_scroll_demo_poster.png"
+                style="object-position: 50% 0;">
+                <source src="./projects/infinite_scroll/infinite_scroll_demo_c.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>Infinite scroll search</h2>
+
+                <p>More books automatically loaded when you reach the bottom of the page.</p>
+
+                <p> <b>JS &ensp; React &ensp; HTML &ensp; CSS</b> </p>
+
+                <p>
+                    <a href="https://github.com/KirillTechnology/infinite_scroll_react">GitHub (React version)</a>
+                </p>
+
+
+                <p>
+                    <a href="https://github.com/KirillTechnology/infinite_scroll">GitHub (JavaScript demo)</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="content-center">
+
+            <video autoplay muted loop playsinline poster="./projects/gradient_generator/sample_poster.png">
+                <source src="./projects/gradient_generator/gradient_demo_c.mp4" type="video/mp4">
+            </video>
+
+            <div>
+
+                <h2>Gradient generator</h2>
+
+                <p>You can generate a gradient for you web projects with this app.
+                    It is easy to use. Also you can generate random colors. The app
+                    shows the result and exports it to HTML code for you.</p>
+
+                <p> <b>JS &ensp; HTML &ensp; CSS</b> </p>
+
+                <p>
+                    <a href="./projects/gradient_generator/index.html">Live demo</a>
+                    /
+                    <a href="https://github.com/KirillTechnology/gradient_generator">GitHub</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <p>Earth 2025</p>
+        </div>
+    </footer>
+
+    <script src='./js/script.js'></script>
+
+</body>
+
+</html>
