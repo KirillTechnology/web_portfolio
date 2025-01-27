@@ -291,7 +291,9 @@ p {
         width: 100%;
         left: 0;
         /* width: 100%; */
-        border: 2px solid transparent;
+        /* border: 2px solid transparent; */
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     div.content-center img {
