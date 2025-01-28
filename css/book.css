@@ -132,6 +132,55 @@ img.book-sample:active {
     padding-left: 40px;
 }
 
+
+
+
+
+/***** Popup window *****/
+
+div.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+div.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+div.overlay div {
+    background: white;
+    width: 350px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+/***** Mobile *****/
+
 @media (max-width: 600px) {
 
     .book-description {
@@ -179,44 +228,4 @@ img.book-sample:active {
         margin-bottom: 0;
     }
 
-}
-
-
-
-
-div.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    visibility: hidden;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 5;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-div.overlay.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-div.overlay div {
-    background: white;
-    width: 350px;
-    height: 200px;
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
