@@ -69,9 +69,11 @@ nav.top {
 @media (max-width: 600px) {
 
     header {
-        position: sticky;
-        z-index: 8;
+        /* position: sticky; */
+        position: fixed;
+        width: 100%;
         top: 0px;
+        z-index: 8;
     }
 
     nav.top {
