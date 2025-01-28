@@ -69,9 +69,7 @@ nav.top {
 @media (max-width: 600px) {
 
     header {
-        /* position: sticky; */
-        position: fixed;
-        width: 100%;
+        position: sticky;
         top: 0px;
         z-index: 8;
     }
@@ -82,7 +80,7 @@ nav.top {
         right: 0;
         height: 100vh;
         width: 70vw;
-        background-color: rgba(0, 0, 0, 0.725);
+        background-color: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         display: flex;
