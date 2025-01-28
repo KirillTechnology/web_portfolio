@@ -50,56 +50,112 @@
     <div class="sheet">
 
         <div class="books">
-                
+
             <!-- <h1 style="display: none;">Books</h1> -->
 
-            <a href="book_EE_handbook.html">
-                <video autoplay muted playsinline poster="./books/EE handbook/Electrical Engineering Handbook.png" style="filter: contrast(110%)">
-                    <source src="./books/EE handbook/Electrical Engineering Handbook.mp4" type="video/mp4">
-                </video>
-            </a>
-            
-            <a href="book_JS.html">
-                <video autoplay muted playsinline poster="./books/JS/JS2.png">
-                    <source src="./books/JS/JS2.mp4" type="video/mp4">
-                </video>
-            </a>
+            <video autoplay muted playsinline poster="./books/EE handbook/Electrical Engineering Handbook.png"
+                style="filter: contrast(110%); cursor: pointer;"
+                onclick="document.querySelector('#ee').classList.toggle('active')">
+                <source src="./books/EE handbook/Electrical Engineering Handbook.mp4" type="video/mp4">
+            </video>
 
-            <a href="book_Python.html">
-                <video autoplay muted playsinline poster="./books/Python/Python.png">
-                    <source src="./books/Python/Python.mp4" type="video/mp4">
-                </video>
-            </a>
-            
-            <a href="book_Git.html">
-                <video autoplay muted playsinline poster="./books/Git/Git.png">
-                    <source src="./books/Git/Git.mp4" type="video/mp4">
-                </video>
-            </a>
-            
-            <a href="book_Docker.html">
-                <video autoplay muted playsinline poster="./books/Docker/Docker.png">
-                    <source src="./books/Docker/Docker.mp4" type="video/mp4">
-                </video>
-            </a>
-            
-            <a href="book_React.html">
-                <video autoplay muted playsinline poster="./books/React/React.png">
-                    <source src="./books/React/React.mp4" type="video/mp4">
-                </video>
-            </a>
+            <div class="overlay" id="ee" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>EE Handbook Comming Soon</b></p>
+                </div>
+            </div>
 
-            <a href="book_Redux.html">
-                <video autoplay muted playsinline poster="./books/Redux/Redux.png">
-                    <source src="./books/Redux/Redux.mp4" type="video/mp4">
-                </video>
-            </a>
-            
-            <a onclick="alert('Coming soon')" style="cursor: pointer;">
-                <video autoplay muted playsinline poster="./books/Other/More coming soon.png" style="filter: contrast(110%)">
-                    <source src="./books/Other/More coming soon.mp4" type="video/mp4">
-                </video>
-            </a>
+
+            <video autoplay muted playsinline poster="./books/JS/JS2.png" style="cursor: pointer;"
+                onclick="document.querySelector('#js').classList.toggle('active')">
+                <source src="./books/JS/JS2.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay" id="js" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>JavaScript</b></p>
+                    <p><a href="./books/JS/JS 0.2.0.xlsx" download="JavaScript">Download</a></p>
+                </div>
+            </div>
+
+
+            <video autoplay muted playsinline poster="./books/Python/Python.png" style="cursor: pointer;"
+                onclick="document.querySelector('#py').classList.toggle('active')">
+                <source src="./books/Python/Python.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay" id="py" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>Python</b></p>
+                    <p><a href="./books/Python/Python.xlsx" download="Python">Download</a></p>
+                </div>
+            </div>
+
+
+
+            <video autoplay muted playsinline poster="./books/Git/Git.png" style="cursor: pointer;"
+                onclick="document.querySelector('#git').classList.toggle('active')">
+                <source src="./books/Git/Git.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay" id="git" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>Git</b></p>
+                    <p><a href="./books/Git/Git 0.1.0.xlsx" download="Git">Download</a></p>
+                </div>
+            </div>
+
+
+            <video autoplay muted playsinline poster="./books/Docker/Docker.png" style="cursor: pointer;"
+                onclick="document.querySelector('#docker').classList.toggle('active')">
+                <source src="./books/Docker/Docker.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay" id="docker" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>Docker</b></p>
+                    <p><a href="./books/Docker/Docker 0.1.0.xlsx" download="Docker">Download</a></p>
+                </div>
+            </div>
+
+
+            <video autoplay muted playsinline poster="./books/React/React.png" style="cursor: pointer;"
+                onclick="document.querySelector('#react').classList.toggle('active')">
+                <source src="./books/React/React.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay" id="react" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>React</b></p>
+                    <p><a href="./books/React/React 0.1.0.xlsx" download="React">Download</a></p>
+                </div>
+            </div>
+
+
+            <video autoplay muted playsinline poster="./books/Redux/Redux.png" style="cursor: pointer;"
+                onclick="document.querySelector('#redux').classList.toggle('active')">
+                <source src="./books/Redux/Redux.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay" id="redux" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>Redux</b></p>
+                    <p><a href="./books/Redux/Redux 0.1.0.xlsx" download="Redux">Download</a></p>
+                </div>
+            </div>
+
+
+            <video autoplay muted playsinline poster="./books/Other/More coming soon.png"
+                style="filter: contrast(110%); cursor: pointer;"
+                onclick="document.querySelector('#more').classList.toggle('active')">
+                <source src="./books/Other/More coming soon.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay" id="more" onclick="if (event.target.id !== '') this.classList.toggle('active') ">
+                <div>
+                    <p><b>More Comming Soon</b></p>
+                </div>
+            </div>
 
             <!-- <a href="book.html"><img src="./books/test/JavaScript.png" alt=""></a> -->
 
