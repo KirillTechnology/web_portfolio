@@ -69,9 +69,7 @@ nav.top {
 @media (max-width: 600px) {
 
     header {
-        /* position: sticky; */
-        position: fixed;
-        width: 100%;
+        position: sticky;
         top: 0px;
         z-index: 8;
     }
@@ -275,7 +273,7 @@ p {
 @media (max-width: 600px) {
 
     div.sheet {
-        padding: 60px 20px 20px 20px;
+        padding: 30px 20px;
     }
 
     div.content1 {
